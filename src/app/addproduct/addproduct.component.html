@@ -1,0 +1,39 @@
+<div class="jumbotron">
+  <form (ngSubmit)="Prod()">
+    <div class="form-group">
+        <label>product id</label>
+        <input type="text" name="productId" [(ngModel)]="productItem.productId"/>
+    </div>
+    <div class="form-group">
+        <label>product name</label>
+        <input type="text" name="productName" [(ngModel)]="productItem.productName"/>
+    </div>
+    <div class="form-group">
+        <label>product code</label>
+        <input type="text" name="productCode" [(ngModel)]="productItem.productCode"/>
+    </div>
+    <div class="form-group">
+        <label>release date</label>
+        <input type="text" name="releaseDate" [(ngModel)]="productItem.releaseDate"/>
+    </div>
+    <div class="form-group">
+        <label>description</label>
+        <input type="text" name="description" [(ngModel)]="productItem.description"/>
+    </div>
+    <div class="form-group">
+        <label>prize</label>
+        <input type="text" name="price" [(ngModel)]="productItem.price"/>
+    </div>
+    <div class="form-group">
+        <label>star rating</label>
+        <input type="text" name="starRating" [(ngModel)]="productItem.starRating"/>
+    </div>
+    <div class="form-group">
+        <label>image url</label>
+        <input type="text" name="imageUrl" [(ngModel)]="productItem.imageUrl"/>
+    </div>
+    <button type = "submit" class = "forsubmit">submit</button>
+  
+
+  </form>
+</div>

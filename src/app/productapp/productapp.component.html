@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card-header">Product list</div>
+  <div class="card-body">
+   <div class="table-responsive">
+                
+    <table class="table"
+    *ngIf='products && products.length'>
+      <thead>
+        <tr>
+          <th><button class="btn btn-primary"  (click)="buttonClick()">{{buttonText}}</button></th>
+
+          <th>product</th>
+          <th>code</th>
+          <th>available</th>
+          <th>price</th>
+          <th>5 star rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of products">
+
+            <td><img  *ngIf="flag" src={{i.imageUrl}} alt="not found"></td>
+
+          <td>{{i.productName}}</td>
+          <td>{{i.productCode}}</td>
+          <td>{{i.description}}</td>
+          <td>{{i.price}}</td>
+          <td>{{i.starRating}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  </div>
